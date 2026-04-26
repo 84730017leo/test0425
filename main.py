@@ -20,6 +20,10 @@ def div(a: int, b: int) -> float:
         raise ValueError("除數不能為 0！")
     return a / b
 
+def power(a: float, b: float) -> float:
+    """次方：a 的 b 次方"""
+    return a ** b
+
 def main():
     # 測試問候功能
     message = greet("World")
@@ -41,7 +45,14 @@ def main():
     result = div(10, 2)
     print(f"10 / 2 = {result}")
 
-    print("專案初始化成功！✅")
+    # 測試次方功能（使用者輸入）
+    print("\n--- 次方計算 ---")
+    a = float(input("請輸入底數 a："))
+    b = float(input("請輸入次數 b："))
+    result = power(a, b)
+    print(f"{a} 的 {b} 次方 = {result}")
+
+    print("\n專案初始化成功！✅")
 
 if __name__ == "__main__":
     main()
