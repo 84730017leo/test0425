@@ -1,14 +1,13 @@
-
 def greet(name: str) -> str:
     """回傳問候語"""
     return f"Hello, {name}! 歡迎使用本專案。"
 
-
 def add(a: int, b: int) -> int:
     """兩數相加"""
     return a + b
+
 def dif(a: int, b: int) -> int:
-    """兩數相加"""
+    """兩數相減"""
     return a - b
 
 def main():
@@ -19,12 +18,11 @@ def main():
     # 測試加法功能
     result = add(3, 5)
     print(f"3 + 5 = {result}")
-    
-    result=dif(13,8)
-    print(f"13 - 8 = {result}")   
+
+    result = dif(13, 8)
+    print(f"13 - 8 = {result}")
 
     print("專案初始化成功！✅")
-
 
 if __name__ == "__main__":
     main()
